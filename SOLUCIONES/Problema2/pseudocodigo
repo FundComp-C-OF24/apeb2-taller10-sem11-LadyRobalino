@@ -1,0 +1,49 @@
+//Problema 2 Generar una solución que implemente 3 procedimientos. Que permitan calcular el área de un cuadrado, área de un triángulo y área de un rectángulo
+
+AlgoritmoCalcularArea
+Inicio
+1) Funcion Principal()
+1)   Definicion 
+         elegirNum como entero(0,n)
+         lado, baseTri, alturaTri, baseRec, alturaRec, como real(0.0,n)
+2)       <<"Eliga una Opción:"
+3)       <<"1. El área del cuadrado"
+4)       <<"2. El área del trianguulo"
+5)       <<"3. El área del rectangulo"
+6)       >>elegirNum
+7)       Si (elegirNum == 1)
+8)          <<"Ingrese el lado del cuadrado:"
+9)          >>lado
+10)         <<"El área del cuadrado es: ", areaCuadrado(lado)
+11)         Sino
+12)          Si (elegirNum == 2)
+13)         <<"Ingrese la base del triangulo:"
+14)         >>baseTri
+15)         <<"El área del triangulo es: ", areaTriangulo(baseTri, alturaTri)
+16)      Sino
+17)         Si (elegirNum == 3)
+18)         <<"Ingrese la base del rectangulo:"
+19)         >>baserec
+20)         <<"Ingrese la altura del rectangulo:"
+21)         >>alturaRec
+22)         <<"El área del triangulo es: ", areaRectangulo(baseRec, alturaRec)
+23)         Sino
+24)             <<"Solo se permite numeros del 1 al 3, intente de nuevo:"
+25)         FinSi
+26)      FinSi
+27)      FinSi
+28) Fin Funcion Principal
+29) Fin Algoritmo
+
+1) Procedimiento areaCuadrado(lado d(0.0.n))
+2)        areaTotal= lado*lado
+3) Fin Procedimiento areaCuadrado
+
+1) Procedimiento areaTriangulo(baseTri d(0.0.n), alturaTri d(0.0.n))
+2)        areaTotal= (baseTri*alturaTri)/2
+3) Fin Procedimiento areaTriangulo
+
+1) Procedimiento areaRectangulo(baseRec d(0.0.n), alturaRec d(0.0.n))
+2)        areaTotal= baseRec*alturaRec
+3) Fin Procedimiento areaRectangulo
+

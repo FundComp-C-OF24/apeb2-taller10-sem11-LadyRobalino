@@ -1,0 +1,37 @@
+//Problema 3 Generar una función que tenga 4 parámetros de tipo decimal y devuelva el promedio cualitativo de los parámetros.
+
+1) Algoritmo PromediosCualitativos
+2)	Inicio
+3)	Funcion principal()
+4)		Definicion
+			nota1, notanota2, nota3, nota4, promedio Como Real [0.0,n]
+			cualitativo="" Como Cadena [A-Z, ,a-z]
+5)		<< "Ingrese la nota 1: "
+6)		>> nota1
+7)		<< "Ingrese la nota  2: "
+8)		>> nota2
+9)		<< "Ingrese la nota 3: "
+10)		>> nota3
+11)		<< "Ingrese la nota 4: "
+12)		>> nota4
+13)		<< "El promedio cualitativo es: ", calificacionCuali(nota1,nota2,nota3,nota4)
+14)	 Fin funcion principal
+15) FinAlgoritmo
+
+1) Funcion  calificacionCuali(nota1 i(0,n),nota2 i(0,n),nota3 i(0,n),nota4 i(0,n),cualitativo x(a-z, ,A-Z))
+2)	   prom= (nota1+nota2+nota3+nota4)/4
+3)	   Si(prom <= 5)
+4)		  cualitativo = "Regular"
+5)	   SiNo
+6)		   Si(prom <= 8)
+7)			  cualitativo = "Bueno"
+8)		   SiNo
+9)			   Si(prom <= 9)
+10)				 cualitativo = "Muy bueno"
+11)			   SiNo
+12)				   cualitativo = "Sobresaliente"
+13)			   FinSi
+14)		    FinSi
+15)	    FinSi
+16)	    Devolver cualitativo
+17) Fin Funcion calificacionCuali

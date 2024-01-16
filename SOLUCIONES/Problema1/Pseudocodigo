@@ -1,0 +1,66 @@
+//Problema 1 Generar los procedimientos y/o funciones que impriman los valor pares, impares y el promedio de un arreglo bidimensional. 
+
+AlgoritmoNumerosParesImparesPromedio
+Inicio
+1) Metodo Principal()
+2)      Definición
+            numeros como entero (0,n)
+            filas como entero
+            columnas como entero           
+3)      Dimension
+            filas=3
+            columnas=3
+            numeros[filas][columnas]
+4)      Para (i = 0; i < longitud(filas)-1; i++) 
+5)           Para (j = 0; i < longitud(columnas)-1; j++) 
+6)            numeros[i][j]=Aleatorio(0,10)
+7)           FinPara
+8)      FinPara
+9)      <<("Los valores pares son: ", valoresPares(numeros))
+10)     <<("Los valores impares son: ", valoresImpares(numeros))
+11)     <<("El pomedio es: ", promedio(numeros))
+12) Fin Metodo Principal
+
+1) Funcion valoresPares (numeros i(0,10))
+2)      Definicion
+              pares: i(0,10)
+3)      Para (i = 0; i < longitud(numeros)-1; i++) {
+4)           Para (j = 0; j < longitud(numeros[i])-1; j++)
+6)                if (numeros[i][j] MOD 2 = 0)
+7)                   pares= numeros[i][j]
+8)                Fin Si
+9)           FinPara
+10)     FinPara
+11)     devolver pares
+12)Fin Funcion valoresPares
+
+1) Funcion valoresImpares(numeros i(0,10))
+2)      Definicion
+              impares: i(0,10)
+3)      Para (i = 0; i < longitud(numeros)-1; i++) {
+4)           Para (j = 0; j < longitud(numeros[i])-1; j++)
+6)                if (numeros[i][j] MOD 2 != 0)
+7)                   impares= numeros[i][j]
+8)                Fin Si
+9)           FinPara
+10)     FinPara
+11)     devolver impares
+12)Fin Funcion valoresImpares
+
+1) Funcion promedio(numeros i(0,10))
+2)      Definicion
+              suma como entero
+              contador como enter
+              promedio como real
+              suma=0
+              contador=0
+3)      Para (i = 0; i < longitud(numeros)-1; i++) {
+4)           Para (j = 0; j < longitud(numeros[i])-1; j++)
+6)                 suma= suma+numeros[i][j]
+7)                 contador=contador+1                
+8)           FinPara
+9)      FinPara
+10)     promedio= suma/contador
+11)     devolver promedio
+12)Fin Funcion promedio
+                

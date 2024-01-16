@@ -1,0 +1,44 @@
+//Problema 4 Generar un procedimiento para calcular el valor de la planilla de luz y otro procedimiento para calcular el valor del predio de un bien inmueble.
+
+1) Algoritmo PlanillaLuzBienInmueble
+2)	Inicio
+3)	Metodo principal	
+4)		Definicion
+			valorKw, numeroKw, valorInmueble, valorPlanilla=0, predio=0 Como Real [0.0,n]
+			cedula, nombCliente como Cadena [A-Z, ,a-z]
+			opcion como entero (0,n)
+5)		<< "Ingrese el nombre del usuario: "
+6)		>> nombCliente
+7)		<< "Ingrese la cedula del cliente: "
+8)		>> cedula
+9)		<< "Ingrese la opcion que desea saber: "
+10)		<< "1. Planilla de luz"
+11)		<< "2. Predio de un bien inmueble"
+12)		>> opcion
+13)		Si (opcion == 1 )
+14)			<< "Ingresar el valor del Kilovatio: "
+15)			>> valorKw
+16)			<< "Ingrese el numero de Kilovatios gastados al mes: "
+17)			>> numeroKV
+18)			valorPlanilla<-planillaLuz(valorKw, numeroKw)
+19)			<< "Reporte"
+20)			<< "Cliente ", nombCliente, " con cedula ", cedula, " debe pagar el valor de $", 	valorPlanilla
+21)		SiNo
+22)			Si (opcion == 2)
+23)				<< "Ingresar el valor del Inmueble: "
+24)				>> valorInmueb
+25)				predio<-calcularPredio(valorInmueb)
+26)				<< "Reporte"
+27)				<< "Cliente ", nombCli, " con cedula ", cedula, " tiene un inmueble valorado en $", valorInmueb," y tiene que pagar de predio $", predio
+28)			FinSi
+29)		FinSi
+30)	Fin Metodo principal
+31)FinAlgoritmo
+
+1.Procedimiento planillaLuz(valorKW d(0.0,n),numeroKV d(0.0,n), valorPlanilla d(0.0,n))
+2.	   valorPlanilla = valorKw * numeroKw
+3.Fin Procedimiento planillaLuz
+
+1.Procedimiento calcularPredio(valorInmueb d(0.0,n), predio d(0.0,n)):d
+2.	   predio = valorInmueb * 0.02
+3.Fin Procedimiento calcularPredio
